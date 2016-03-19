@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="simpledb" default="dist" basedir=".">
+<project name="java.simpledb" default="dist" basedir=".">
     <property name="src" location="src"/>
     <property name="testd" location="test"/>
 
@@ -78,7 +78,7 @@
     project">
         <echo file=".project" append="false">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;projectDescription&gt;
-    &lt;name&gt;simpledb&lt;/name&gt;
+    &lt;name&gt;java.simpledb&lt;/name&gt;
     &lt;comment&gt;&lt;/comment&gt;
     &lt;projects&gt;
     &lt;/projects&gt;
@@ -180,7 +180,7 @@
         <javadoc destdir="${doc}" access="private" failonerror="true" source="${sourceversion}">
             <classpath refid="classpath.base" />
             <fileset dir="src/java" defaultexcludes="yes">
-                <include name="simpledb/**/*.java"/>
+                <include name="java.simpledb/**/*.java"/>
             </fileset>
         </javadoc>
     </target>
@@ -216,7 +216,7 @@
                 <fileset dir="${build.test}">
                     <include name="**/*Test.class"/>
                     <exclude name="**/*$*.class"/>
-                    <exclude name="simpledb/systemtest/*.class"/>
+                    <exclude name="java.simpledb/systemtest/*.class"/>
                 </fileset>
             </batchtest>
         </RunJunit>
@@ -226,7 +226,7 @@
         <RunJunit>
             <batchtest>
                 <fileset dir="${build.test}">
-                    <include name="simpledb/systemtest/*Test.class"/>
+                    <include name="java.simpledb/systemtest/*Test.class"/>
                 </fileset>
             </batchtest>
         </RunJunit>
@@ -238,13 +238,13 @@
         <fail unless="test" message="You must run this target with -Dtest=TestName"/>
 
         <!-- Check if the class exists -->
-        <available property="test.exists" classname="simpledb.${test}">
+        <available property="test.exists" classname="java.simpledb.${test}">
                 <classpath refid="classpath.test" />
         </available>
         <fail unless="test.exists" message="Test ${test} could not be found"/>
 
         <RunJunit>
-            <test name="simpledb.${test}"/>
+            <test name="java.simpledb.${test}"/>
         </RunJunit>
     </target>
 

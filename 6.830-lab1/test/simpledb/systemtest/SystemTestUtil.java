@@ -9,7 +9,6 @@ import java.util.Random;
 import java.util.UUID;
 
 import org.junit.Assert;
-
 import simpledb.*;
 
 public class SystemTestUtil {

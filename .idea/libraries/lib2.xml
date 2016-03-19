@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/6.830-lab2/lib/jline-0.9.94.jar!/" />
+      <root url="jar://$PROJECT_DIR$/6.830-lab2/lib/zql.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

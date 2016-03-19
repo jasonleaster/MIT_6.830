@@ -7,11 +7,10 @@ import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.atomic.AtomicInteger;
-import java.util.Arrays;
 
 import org.junit.Test;
 
-import simpledb.*;
+import java.simpledb.*;
 
 import static org.junit.Assert.*;
 

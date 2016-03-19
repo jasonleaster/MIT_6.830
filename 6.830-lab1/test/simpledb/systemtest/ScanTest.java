@@ -1,7 +1,5 @@
 package simpledb.systemtest;
 
-import simpledb.systemtest.SystemTestUtil;
-
 import static org.junit.Assert.*;
 
 import java.io.File;
@@ -11,7 +9,6 @@ import java.util.NoSuchElementException;
 import java.util.Random;
 
 import org.junit.Test;
-
 import simpledb.*;
 
 /**

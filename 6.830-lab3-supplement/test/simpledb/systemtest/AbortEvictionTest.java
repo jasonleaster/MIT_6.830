@@ -2,7 +2,7 @@ package simpledb.systemtest;
 
 import java.io.IOException;
 
-import simpledb.*;
+import java.simpledb.*;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
